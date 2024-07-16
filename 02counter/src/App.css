@@ -1,42 +1,99 @@
+
 #root {
-  max-width: 1280px;
+
   margin: 0 auto;
+  width: 100%;
   padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffcc33, #ff66cc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 90%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(45deg, #ff66cc, #ffcc33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes logo-spin {
+.counter-container {
+  margin-top: 2rem;
+}
+
+.counter-value {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  outline: none;
+  color: white;
+}
+
+.button.add {
+  background: linear-gradient(45deg, #66ccff, #3399ff);
+}
+
+.button.add:hover {
+  background: linear-gradient(45deg, #3399ff, #66ccff);
+  transform: translateY(-2px);
+}
+
+.button.remove {
+  background: linear-gradient(45deg, #ff6699, #ff3366);
+}
+
+.button.remove:hover {
+  background: linear-gradient(45deg, #ff3366, #ff6699);
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  to {
+    transform: scale(1);
+  }
 }
