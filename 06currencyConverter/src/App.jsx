@@ -3,7 +3,6 @@ import InputBox from "./components/InputBox";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
 import { useState } from "react";
 
-
 function App() {
     const [amount, setAmount] = useState(0);
     const [from, setFrom] = useState("usd");
@@ -45,7 +44,7 @@ function App() {
                                     setAmount(amount)
                                 }
                                 selectCurrency={from}
-                                onAmountChange={(amount)=>setAmount(amount)}
+                                onAmountChange={(amount) => setAmount(amount)}
                             />
                         </div>
                         <div className="relative w-full h-0.5">

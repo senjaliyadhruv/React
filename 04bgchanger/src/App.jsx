@@ -31,20 +31,24 @@ function App() {
     return (
         <div className={`min-h-screen ${color}`}>
             <div className="flex flex-col items-center justify-center h-full">
-                <h1 className={`text-4xl font-bold mb-6 ${textColor}`}>Colorful App</h1>
+                <h1 className={`text-4xl font-bold mb-6 ${textColor}`}>
+                    Colorful App
+                </h1>
                 <div className="flex flex-wrap justify-center gap-4 w-full max-w-lg">
                     {colorOptions.map((option, index) => (
                         <button
                             key={index}
                             className={`py-3 px-4 rounded-lg focus:outline-none shadow-lg transition duration-300 ${option.value}`}
-                            style={{ flex: '1 0 30%' }}
+                            style={{ flex: "1 0 30%" }}
                             onClick={() => changeColor(option.value)}
                         >
                             {option.name}
                         </button>
                     ))}
                 </div>
-                <p className={`text-xl mt-8 font-bold ${textColor}`}>Made with ❤️ by Dhruv Senjaliya</p>
+                <p className={`text-xl mt-8 font-bold ${textColor}`}>
+                    Made with ❤️ by Dhruv Senjaliya
+                </p>
             </div>
         </div>
     );

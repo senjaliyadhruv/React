@@ -1,99 +1,99 @@
-
 #root {
-
-  margin: 0 auto;
-  width: 100%;
-  padding: 2rem;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #ffcc33, #ff66cc);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffcc33, #ff66cc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+body {
+    overflow-y: hidden;
+}
 .app {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-  animation: fadeIn 1s ease-in-out;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-  background: -webkit-linear-gradient(45deg, #ff66cc, #ffcc33);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(45deg, #ff66cc, #ffcc33);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .counter-container {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .counter-value {
-  font-size: 2rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-  animation: scaleUp 0.3s ease-in-out;
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    animation: scaleUp 0.3s ease-in-out;
 }
 
 .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .button {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  outline: none;
-  color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+    color: white;
 }
 
 .button.add {
-  background: linear-gradient(45deg, #66ccff, #3399ff);
+    background: linear-gradient(45deg, #66ccff, #3399ff);
 }
 
 .button.add:hover {
-  background: linear-gradient(45deg, #3399ff, #66ccff);
-  transform: translateY(-2px);
+    background: linear-gradient(45deg, #3399ff, #66ccff);
+    transform: translateY(-2px);
 }
 
 .button.remove {
-  background: linear-gradient(45deg, #ff6699, #ff3366);
+    background: linear-gradient(45deg, #ff6699, #ff3366);
 }
 
 .button.remove:hover {
-  background: linear-gradient(45deg, #ff3366, #ff6699);
-  transform: translateY(-2px);
+    background: linear-gradient(45deg, #ff3366, #ff6699);
+    transform: translateY(-2px);
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes scaleUp {
-  from {
-    transform: scale(0.9);
-  }
-  to {
-    transform: scale(1);
-  }
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
 }
